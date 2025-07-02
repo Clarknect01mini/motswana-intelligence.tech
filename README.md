@@ -1,107 +1,91 @@
-# Tina Starter 🦙
+# Motswna Intelligence – Company Landing Page 🧠🌍
 
-![tina-cloud-starter-demo](https://user-images.githubusercontent.com/103008/130587027-995ccc45-a852-4f90-b658-13e8e0517339.gif)
-
-This Next.js starter is powered by [TinaCMS](https://app.tina.io) for you and your team to visually live edit the structured content of your website. ✨
-
-The content is managed through Markdown and JSON files stored in your GitHub repository, and queried through Tina GraphQL API.
-
-### Features
-
-- [Tina Headless CMS](https://app.tina.io) for authentication, content modeling, visual editing and team management.
-- [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route.
-- Local development workflow from the filesystem with a local GraqhQL server.
-
-## Requirements
-
-- Git, [Node.js Active LTS](https://nodejs.org/en/about/releases/), pnpm installed for local development.
-- A [TinaCMS](https://app.tina.io) account for live editing.
-
-## Local Development
-
-Install the project's dependencies:
-
-> [!NOTE]  
-> [Do you know the best package manager for Node.js?](https://www.ssw.com.au/rules/best-package-manager-for-node/) Using the right package manager can greatly enhance your development workflow. We recommend using pnpm for its speed and efficient handling of dependencies. Learn more about why pnpm might be the best choice for your projects by checking out this rule from SSW.
+Welcome to the **Motswna Intelligence** company landing page! This project is built with [Next.js](https://nextjs.org/) and powered by [TinaCMS](https://app.tina.io), giving our team the ability to visually manage content and collaborate on updates directly within the website.
 
 
-```
+---
+
+## 🌟 Key Features
+
+- 🔧 Visual editing with [TinaCMS](https://app.tina.io)
+- ✍️ Markdown/JSON content stored in GitHub
+- 🌐 Hosted on GitHub Pages or [Vercel](https://vercel.com)
+- 🛠 Local development with Tina GraphQL API
+- 👥 Ready for team collaboration and content modeling
+
+---
+
+## 🚀 Getting Started
+
+### Requirements
+
+Make sure you have the following installed:
+
+- Git
+- Node.js (LTS version recommended)
+- [pnpm](https://pnpm.io) (preferred package manager)
+- A [TinaCMS account](https://app.tina.io)
+
+---
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+
+```bash
 pnpm install
 ```
 
-Run the project locally:
+### 2. Start Local Development
 
-```
+```bash
 pnpm dev
 ```
 
-### Local URLs
+### 🔗 Local URLs
 
-- http://localhost:3000 : browse the website
-- http://localhost:3000/admin : connect to Tina Cloud and go in edit mode
-- http://localhost:3000/exit-admin : log out of Tina Cloud
-- http://localhost:4001/altair/ : GraphQL playground to test queries and browse the API documentation
+* [http://localhost:3000](http://localhost:3000) – Website preview
+* [http://localhost:3000/admin](http://localhost:3000/admin) – Tina Cloud editor
+* [http://localhost:3000/exit-admin](http://localhost:3000/exit-admin) – Exit edit mode
+* [http://localhost:4001/altair/](http://localhost:4001/altair/) – GraphQL playground
 
-## Deployment
+---
 
-### GitHub Pages
+## 🌍 Deploying to Vercel
 
-This starter can be deployed to GitHub Pages. A GitHub Actions workflow is included that handles the build and deployment process. 
+This project is fully compatible with [Vercel](https://vercel.com), which supports both static and dynamic rendering and integrates well with TinaCMS.
 
-To deploy to GitHub Pages:
+### Steps:
 
-1. In your repository settings, ensure GitHub Pages is enabled and set to deploy from the `gh-pages` branch
-2. Push changes to your main branch - the workflow will automatically build and deploy the site
+1. Push your repository to GitHub.
+2. Connect the repository to Vercel.
+3. Add the following environment variables in **Vercel → Project Settings → Environment Variables**:
 
-> [!NOTE]
-> When deploying to GitHub Pages, you'll need to update your secrets in Settings | Secrets and variables | Actions to include:
-> - `NEXT_PUBLIC_TINA_CLIENT_ID`
-> - `TINA_TOKEN`
->
-> You get these from your TinaCloud project - [read the docs](https://tina.io/docs/tina-cloud/deployment-options/github-pages)
-
-> [!IMPORTANT]
-> GitHub Pages does not support server side code, so this will run as a static site. If you don't want to deploy to GitHub pages, just delete `.github/workflows/build-and-deploy.yml`
-
-### Building the Starter Locally (Using the hosted content API)
-
-Replace the `.env.example`, with `.env`
-
-```
-NEXT_PUBLIC_TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
-TINA_TOKEN=<get this from the project you create at app.tina.io>
-NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
+```env
+NEXT_PUBLIC_TINA_CLIENT_ID=your-client-id
+TINA_TOKEN=your-token
+NEXT_PUBLIC_TINA_BRANCH=main
 ```
 
-Build the project:
+4. Click **Deploy** — your site will be live in minutes!
+
+---
+
+## 📦 Build for Production
+
+To generate a production build locally:
 
 ```bash
 pnpm build
 ```
 
-## Getting Help
+---
 
-To get help with any TinaCMS challenges you may have:
+## 🙏 Thanks
 
-- Visit the [documentation](https://tina.io/docs/) to learn about Tina.
-- [Join our Discord](https://discord.gg/zumN63Ybpf) to share feedback.
-- Visit the [community forum](https://community.tinacms.org/) to ask questions.
-- Get support through the chat widget on the TinaCMS Dashboard
-- [Email us](mailto:support@tina.io) to schedule a call with our team and share more about your context and what you're trying to achieve.
-- [Search or open an issue](https://github.com/tinacms/tinacms/issues) if something is not working.
-- Reach out on Twitter at [@tina_cms](https://twitter.com/tina_cms).
+Big thanks to the incredible [TinaCMS](https://tina.io) team for creating a powerful content editing experience and an open-source foundation for modern content management!
 
-## Development tips
-
-### Visual Studio Code GraphQL extension
-
-[Install the GraphQL extension](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql) to benefit from type auto-completion.
-
-### Typescript
-
-A good way to ensure your components match the shape of your data is to leverage the auto-generated TypeScript types.
-These are rebuilt when your `tina` config changes.
-
-## LICENSE
-
-Licensed under the [Apache 2.0 license](./LICENSE).
+---
