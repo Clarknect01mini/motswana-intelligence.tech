@@ -1,4 +1,4 @@
-# Motswna Intelligence – Company Landing Page 🧠🌍
+# Motswna Intelligence – 
 
 Welcome to the **Motswna Intelligence** company landing page! This project is built with [Next.js](https://nextjs.org/) and powered by [TinaCMS](https://app.tina.io), giving our team the ability to visually manage content and collaborate on updates directly within the website.
 
